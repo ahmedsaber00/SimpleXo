@@ -1,4 +1,3 @@
-package com.saber.sabernews.presentation.features.news
 
 import android.os.Bundle
 import android.view.View
