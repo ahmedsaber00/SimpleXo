@@ -80,6 +80,8 @@ class MainActivity : AppCompatActivity() {
     private fun buttonClicked(num: Int, view: View) {
         if (reset)
             reset()
+        if ((view as Button).text.isNotEmpty())
+            return
         (view as Button).text =
             if (counter % 2 == 0) {
                 xPositions.add(num)
