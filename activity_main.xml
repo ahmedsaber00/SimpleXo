@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.features.news.MainActivity">
+
+    <Spinner
+        android:id="@+id/sp_game_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:entries="@array/options"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:text="@string/start"
+        android:id="@+id/bu_start"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sp_game_option"
+        app:layout_constraintStart_toEndOf="@+id/sp_game_option"
+        app:layout_constraintTop_toTopOf="@+id/sp_game_option" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/gr_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="bu_start,sp_game_option"/>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/gr_buttons"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="bu_0,bu_1,bu_2,bu_3,bu_4,bu_5,bu_6,bu_7,bu_8" />
+
+    <Button
+        android:id="@+id/bu_0"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/bu_1"
+        app:layout_constraintTop_toTopOf="@+id/bu_1" />
+
+    <Button
+        android:id="@+id/bu_1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_game_option" />
+
+    <Button
+        android:id="@+id/bu_2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/bu_1"
+        app:layout_constraintTop_toTopOf="@+id/bu_1" />
+
+    <Button
+        android:id="@+id/bu_3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/bu_4"
+        app:layout_constraintTop_toTopOf="@+id/bu_4" />
+
+    <Button
+        android:id="@+id/bu_4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="@+id/bu_1"
+        app:layout_constraintStart_toStartOf="@+id/bu_1"
+        app:layout_constraintTop_toBottomOf="@+id/bu_1" />
+
+    <Button
+        android:id="@+id/bu_5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/bu_4"
+        app:layout_constraintTop_toTopOf="@+id/bu_4" />
+
+    <Button
+        android:id="@+id/bu_6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/bu_7"
+        app:layout_constraintTop_toTopOf="@+id/bu_7" />
+
+    <Button
+        android:id="@+id/bu_7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="@+id/bu_4"
+        app:layout_constraintStart_toStartOf="@+id/bu_4"
+        app:layout_constraintTop_toBottomOf="@+id/bu_4" />
+
+    <Button
+        android:id="@+id/bu_8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/bu_7"
+        app:layout_constraintTop_toTopOf="@+id/bu_7" />
+</androidx.constraintlayout.widget.ConstraintLayout>
